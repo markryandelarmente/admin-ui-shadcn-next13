@@ -2,10 +2,9 @@ import { Metadata } from "next"
 import React from "react"
 import { AlignRight } from "lucide-react"
 
-import { MainNav } from "@/app/(dashboard)/overview/components/main-nav"
-import { Search } from "@/app/(dashboard)/overview/components/search"
-import TeamSwitcher from "@/app/(dashboard)/overview/components/team-switcher"
-import { UserNav } from "@/app/(dashboard)/overview/components/user-nav"
+import { Search } from "@/app/(dashboard)/components/search"
+import { UserNav } from "@/app/(dashboard)/components/user-nav"
+import Image from "next/image"
 
 export const metadata: Metadata = {
   title: "Dashboard",
@@ -21,11 +20,10 @@ export default function DashboardLayout({
     <>
       <div className="flex-col md:flex">
         <div className="border-b">
-          <div className="flex items-center h-16 px-4">
-            <TeamSwitcher />
-            <MainNav className="mx-6" />
+          <div className="flex items-center w-full p-3 lg:px-5 lg:pl-3">
+            <Image src="/next.svg" alt="Logo" width={40} height={40} />
+            <Search className="mx-6" />
             <div className="flex items-center justify-between ml-auto space-x-4">
-              <Search />
               <AlignRight className="lg:hidden" />
               <UserNav />
             </div>

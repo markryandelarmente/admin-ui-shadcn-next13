@@ -36,6 +36,12 @@ export function MainNav({
         href="/examples/dashboard"
         className="text-sm font-medium transition-colors text-muted-foreground hover:text-primary"
       >
+        Pull Out Request
+      </Link>
+      <Link
+        href="/examples/dashboard"
+        className="text-sm font-medium transition-colors text-muted-foreground hover:text-primary"
+      >
         Management
       </Link>
     </nav>
