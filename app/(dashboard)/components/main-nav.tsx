@@ -18,7 +18,7 @@ export function MainNav({
               <button className="p-2 mr-3 text-gray-600 rounded cursor-pointer hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-900 dark:hover:text-white lg:inline">
                 <span className="sr-only">Toggle sidebar</span>
 
-                <AlignLeft className="w-6 h-6" />
+                <AlignLeft className="w-6 h-6 text-gray-500 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" />
               </button>
               <img
                 alt=""
