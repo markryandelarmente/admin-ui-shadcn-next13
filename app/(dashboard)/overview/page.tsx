@@ -1,21 +1,13 @@
-import { Metadata } from "next"
-import { Activity, CreditCard, DollarSign, Download, Users } from "lucide-react"
+import { Metadata } from 'next'
+import { Activity, CreditCard, DollarSign, Download, Users } from 'lucide-react'
 
-import { Button } from "@/components/ui/button"
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { CalendarDateRangePicker } from "@/app/(dashboard)/overview/components/date-range-picker"
-import { RecentSales } from "@/app/(dashboard)/overview/components/recent-sales"
+import { Button } from '@/components/ui/button'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { CalendarDateRangePicker } from '@/app/(dashboard)/overview/components/date-range-picker'
 
 export const metadata: Metadata = {
-  title: "Dashboard",
-  description: "Example dashboard app using the components.",
+  title: 'Dashboard',
+  description: 'Example dashboard app using the components.',
 }
 
 export default function DashboardPage() {

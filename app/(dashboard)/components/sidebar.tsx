@@ -1,8 +1,8 @@
-"use client"
-import Link from "next/link"
-import { HiChartPie, HiCog6Tooth, HiUsers } from "react-icons/hi2"
-import { usePathname } from "next/navigation"
-import { cn } from "@/lib/utils"
+'use client'
+import Link from 'next/link'
+import { HiChartPie, HiCog6Tooth, HiUsers } from 'react-icons/hi2'
+import { usePathname } from 'next/navigation'
+import { cn } from '@/lib/utils'
 
 type Menu = {
   label: string
@@ -13,19 +13,19 @@ type Menu = {
 
 const menus: Menu[] = [
   {
-    label: "Overview",
+    label: 'Overview',
     icon: <HiChartPie className="w-5 h-5 text-gray-500" />,
-    href: "/overview",
+    href: '/overview',
   },
   {
-    label: "Customers",
+    label: 'Customers',
     icon: <HiUsers className="w-5 h-5 text-gray-500" />,
-    href: "/customers",
+    href: '/customers',
   },
   {
-    label: "Settings",
+    label: 'Settings',
     icon: <HiCog6Tooth className="w-5 h-5 text-gray-500" />,
-    href: "/settings",
+    href: '/settings',
   },
 ]
 
@@ -38,13 +38,13 @@ export function SideBar() {
           <div className="flex flex-col justify-between h-full py-2">
             <div>
               <ul className="pt-4 mt-4 space-y-2 border-t first:mt-0 first:border-t-0 first:pt-0 ">
-                {menus.map((menu) => (
-                  <li>
+                {menus.map((menu, index) => (
+                  <li key={index}>
                     <Link
                       href={menu.href}
                       className={cn(
-                        "flex items-center justify-center p-2 text-base font-normal text-gray-900  rounded-lg hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700",
-                        currentUrl === menu.href && "bg-gray-100"
+                        'flex items-center justify-center p-2 text-base font-normal text-gray-900  rounded-lg hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700',
+                        currentUrl === menu.href && 'bg-gray-100'
                       )}
                     >
                       {menu.icon}

@@ -1,14 +1,9 @@
-import Link from "next/link"
+import { AlignLeft, SearchIcon } from 'lucide-react'
+import { Search } from './search'
+import { UserNav } from './user-nav'
+import Image from 'next/image'
 
-import { cn } from "@/lib/utils"
-import { AlignLeft, SearchIcon } from "lucide-react"
-import { Search } from "./search"
-import { UserNav } from "./user-nav"
-
-export function MainNav({
-  className,
-  ...props
-}: React.HTMLAttributes<HTMLElement>) {
+export function MainNav({}: React.HTMLAttributes<HTMLElement>) {
   return (
     <nav className="fixed z-30 w-full bg-white border-b dark:bg-background">
       <div className="flex flex-wrap items-center justify-between mx-auto">
@@ -20,7 +15,9 @@ export function MainNav({
 
                 <AlignLeft className="w-6 h-6 text-gray-500 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" />
               </button>
-              <img
+              <Image
+                width={32}
+                height={32}
                 alt=""
                 src="https://flowbite.com/docs/images/logo.svg"
                 className="h-6 mr-3 sm:h-8"

@@ -1,12 +1,9 @@
-import { Input } from "@/components/ui/input"
-import { cn } from "@/lib/utils"
+import { Input } from '@/components/ui/input'
+import { cn } from '@/lib/utils'
 
-export function Search({
-  className,
-  ...props
-}: React.HTMLAttributes<HTMLElement>) {
+export function Search({ className }: React.HTMLAttributes<HTMLElement>) {
   return (
-    <div className={cn("hidden lg:flex", className)}>
+    <div className={cn('hidden lg:flex', className)}>
       <Input
         type="search"
         placeholder="Search..."

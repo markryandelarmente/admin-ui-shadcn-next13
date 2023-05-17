@@ -1,17 +1,12 @@
-import { Metadata } from "next"
-import React from "react"
-import { AlignLeft, Moon, SearchIcon, Sun, UserIcon } from "lucide-react"
+import { Metadata } from 'next'
+import React from 'react'
 
-import { Search } from "@/app/(dashboard)/components/search"
-import { UserNav } from "@/app/(dashboard)/components/user-nav"
-import Image from "next/image"
-import { useTheme } from "next-themes"
-import { MainNav } from "./components/main-nav"
-import { SideBar } from "./components/sidebar"
+import { MainNav } from './components/main-nav'
+import { SideBar } from './components/sidebar'
 
 export const metadata: Metadata = {
-  title: "Dashboard",
-  description: "Example dashboard app using the components.",
+  title: 'Dashboard',
+  description: 'Example dashboard app using the components.',
 }
 
 export default function DashboardLayout({
