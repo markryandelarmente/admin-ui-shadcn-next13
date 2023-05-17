@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@faker-js/faker": "github:faker-js/faker",
     "@radix-ui/react-menubar": "^1.0.2",
     "@tanstack/react-table": "^8.9.1",
     "@types/node": "18.16.3",
