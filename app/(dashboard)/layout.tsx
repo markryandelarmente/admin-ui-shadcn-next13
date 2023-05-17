@@ -25,7 +25,7 @@ export default function DashboardLayout({
       <div className="flex items-start pt-16">
         <SideBar />
         <main className="relative w-full h-full overflow-y-auto lg:ml-64">
-          <div className="px-4 pt-6">{children}</div>
+          <div className="px-4 pt-6 space-y-4 md:p-8">{children}</div>
         </main>
       </div>
     </>
